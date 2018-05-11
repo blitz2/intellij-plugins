@@ -14,7 +14,7 @@ public class PhoneGapInstalledPluginsPanel extends InstalledPackagesPanel {
   }
 
   protected boolean installEnabled() {
-    return false;
+    return true;
   }
 
   protected boolean canInstallPackage(@NotNull final InstalledPackage pyPackage) {

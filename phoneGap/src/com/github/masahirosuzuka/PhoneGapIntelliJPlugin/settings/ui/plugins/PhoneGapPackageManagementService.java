@@ -29,6 +29,11 @@ public class PhoneGapPackageManagementService extends PackageManagementServiceEx
     myCommands = commandLine;
   }
 
+  @Override
+  public boolean shouldFetchLatestVersionsForOnlyInstalledPackages() {
+    return true;
+  }
+
   @Nullable
   @Override
   public List<String> getAllRepositories() {
